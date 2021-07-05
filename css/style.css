@@ -10747,11 +10747,73 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background: burlywood;
+.divider {
+  width: 1px;
+  background-color: #7a7575;
+  height: 20px;
 }
-body h1, body .h1 {
-  color: #c50515;
+
+.icon {
+  color: #000;
+}
+
+hr {
+  margin: 0;
+}
+
+.dropdown-position {
+  position: relative;
+}
+
+.dropdown-position:hover .custom-dropdown {
+  display: block;
+}
+
+.custom-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 220;
+  top: 30px;
+  left: 20px;
+  width: 125px;
+  padding: 8px 12px 10px;
+  text-align: left;
+  opacity: 13;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev {
+  margin-left: -60px;
+}
+
+.carousel-control-next {
+  margin-right: -60px;
+}
+
+.carousel-body {
+  background-color: burlywood;
+}
+
+.carousel-body h3, .carousel-body .h3 {
+  font-size: 20px;
+}
+
+.carousel-body h1, .carousel-body .h1 {
+  font-size: 60px;
+}
+
+.img-container {
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.slide1, .slide2, .slide3 {
+  background-color: #e7a0a0;
 }
 
 /*# sourceMappingURL=style.css.map */

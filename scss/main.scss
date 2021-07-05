@@ -8,9 +8,68 @@ $font-family-sans-serif: 'Poppins', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-body{
-    background: burlywood;
-    h1{
-        color: rgb(197, 5, 21);
-    }
+.divider{
+    width: 1px;
+    background-color: rgb(122, 117, 117);
+    height: 20px;
 }
+.icon{
+    color: #000;
+}
+hr{
+    margin: 0;
+}
+.dropdown-position{
+    position: relative;
+}
+.dropdown-position:hover .custom-dropdown{
+    display: block;
+}
+.custom-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 220;
+    top: 30px;
+    left: 20px;
+    width: 125px;
+    padding: 8px 12px 10px;
+   
+    text-align: left;
+    opacity: 13;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    
+}
+
+
+// Carousel section
+
+.carousel-control-prev{
+    // background-color: blue;
+    margin-left: -60px;
+}
+.carousel-control-next{
+    // background-color: blue;
+    margin-right: -60px;
+}
+.carousel-body{
+    background-color: burlywood;
+}
+.carousel-body h3{
+    font-size: 20px;
+}
+.carousel-body h1{
+    font-size: 60px;
+}
+.img-container{
+    height: 100%;
+}
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+.slide1,.slide2,.slide3{
+    background-color: rgb(231, 160, 160);
+}
+
+

@@ -10788,22 +10788,12 @@ hr {
   box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-control-prev {
-  margin-left: -60px;
-}
-
-.carousel-control-next {
-  margin-right: -60px;
-}
-
 .carousel-body h3, .carousel-body .h3 {
   font-size: 20px;
 }
-
 .carousel-body h1, .carousel-body .h1 {
   font-size: 60px;
 }
-
 .carousel-body button {
   margin-top: 30px;
 }
@@ -10811,7 +10801,6 @@ hr {
 .img-container {
   height: 100%;
 }
-
 .img-container img {
   width: 100%;
   height: auto;
@@ -10826,6 +10815,14 @@ hr {
   overflow: hidden;
   position: relative;
 }
+.single-banner:hover img {
+  transform: scale(1.3);
+  transition: all 0.5s ease;
+}
+.single-banner img {
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
 
 .single-bannner-content {
   position: absolute;
@@ -10833,7 +10830,6 @@ hr {
   left: 0;
   padding: 40px 0 0 40px;
 }
-
 .single-bannner-content h1, .single-bannner-content .h1 {
   font-family: Cormorant Garamond;
   font-size: 27px;
@@ -10841,7 +10837,6 @@ hr {
   color: #617d05;
   line-height: 30px;
 }
-
 .single-bannner-content h3, .single-bannner-content .h3 {
   font-family: Cormorant Garamond;
   font-size: 18px;
@@ -10849,7 +10844,6 @@ hr {
   line-height: 24px;
   color: #010101;
 }
-
 .single-bannner-content h3 span, .single-bannner-content .h3 span {
   font-family: Cormorant Garamond;
   font-size: 20px;
@@ -10859,7 +10853,6 @@ hr {
   position: relative;
   top: 2px;
 }
-
 .single-bannner-content .button {
   display: inline-block;
   width: 28px;

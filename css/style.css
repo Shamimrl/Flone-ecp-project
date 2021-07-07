@@ -10911,6 +10911,11 @@ hr {
 .single-product-card {
   position: relative;
 }
+.single-product-card:hover .wishlist, .single-product-card:hover .cart, .single-product-card:hover .quick-view {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  transition: all 0.7s ease;
+}
 .single-product-card .product-image-box {
   position: relative;
   overflow: hidden;
@@ -10934,34 +10939,39 @@ hr {
   transform: translate(0, 0px);
   opacity: 1;
 }
-.single-product-card .product-image-box:hover .pro-card-btn-wrapper {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(-41px);
-  transition: all 0.7s ease;
-}
 .single-product-card .product-image-box .pro-card-btn-wrapper {
-  position: relative;
-  transform: translateY(1px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   width: 100%;
-  visibility: hidden;
-  opacity: 0;
 }
 .single-product-card .product-image-box .pro-card-btn-wrapper .wishlist {
   width: 48px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  transition-delay: 0.3s;
+  z-index: 9;
+  transform: translateY(25px);
+  opacity: 0;
+  transition-delay: 0.1s !important;
+  transition: all 0.7s ease;
 }
 .single-product-card .product-image-box .pro-card-btn-wrapper .cart {
   font-size: 14px;
   width: calc(100% - 96px);
-  transition-delay: 0.1s;
+  z-index: 9;
+  transform: translateY(25px);
+  opacity: 0;
+  transition-delay: 0.2s !important;
+  transition: all 0.7s ease;
 }
 .single-product-card .product-image-box .pro-card-btn-wrapper .quick-view {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s !important;
+  transition: all 0.7s ease;
   width: 48px;
-  margin: 0;
+  z-index: 9;
+  transform: translateY(25px);
+  opacity: 0;
+  transition-delay: 0.2s;
   border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 .single-product-card .product-image-box .pro-card-btn-wrapper .wishlist:hover button, .single-product-card .product-image-box .pro-card-btn-wrapper .cart:hover button, .single-product-card .product-image-box .pro-card-btn-wrapper .quick-view:hover button {
@@ -11005,7 +11015,7 @@ hr {
 
 .product-card-content {
   text-align: center;
-  margin-top: -25px;
+  margin-top: 10px;
   padding: 0;
 }
 .product-card-content h3, .product-card-content .h3 {
@@ -11013,6 +11023,9 @@ hr {
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 0px;
+}
+.product-card-content h3:hover, .product-card-content .h3:hover {
+  color: #a749ff;
 }
 .product-card-content i {
   font-size: 17px;

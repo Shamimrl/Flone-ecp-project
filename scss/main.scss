@@ -135,9 +135,9 @@ hr{
     }
 }
 
-//Main product section
+//******Main daily-deals product section*******
 
-
+// Daily deals header section
 .product-header-section{
     margin: 40px 0;
 
@@ -188,9 +188,17 @@ hr{
 
 }
 
-// ****** Product section ******
+// ****** Product card section ******
 .single-product-card{
     position: relative;
+
+    &:hover .wishlist,&:hover .cart,&:hover .quick-view{
+                
+        // visibility: visible;
+        opacity: 1 !important;
+        transform: translateY(0px) !important;
+        transition: all .7s ease;
+    }
 
     .product-image-box{
         position: relative;
@@ -214,47 +222,63 @@ hr{
             transform: translate(0,0px);
             opacity: 1;
         }
+        
 // Card btn wrapper
 
-        &:hover .pro-card-btn-wrapper {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(-41px);
-            transition: all .7s ease;
-        }
+        // &:hover .pro-card-btn-wrapper {
+        //     visibility: visible;
+        //     opacity: 1;
+        //     transform: translateY(-41px);
+        //     transition: all .7s ease;
+        // }
 
+        
         .pro-card-btn-wrapper{
-            position: relative;
-            // bottom: 0;
-            // left: 0;
-            transform: translateY(1px);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            
+            // transform: translateY(-32px);
             display: flex;
             width: 100%;
-            visibility: hidden;
-            opacity: 0;
+            // visibility: hidden;
+            // opacity: 0;
+
+            
             
             .wishlist{
                 width: 48px;
                 border-right: 1px solid hsla(0,0%,100%,.2);
-                transition-delay: .3s;
-                // transition: all 3s ease;
+                z-index: 9;
+                transform: translateY(25px);
+                // visibility: hidden;
+                opacity: 0;
+                transition-delay: .1s !important;
+                transition: all .7s ease;
             }
             .cart{
                 font-size: 14px;
                 width: calc(100% - 96px);
-                // transition-delay: .1s;
-                transition-delay: .1s;
-                // transition: all 3s ease;
+                z-index: 9;
+                transform: translateY(25px);
+                // visibility: hidden;
+                opacity: 0;
+                transition-delay: .2s !important;
+                transition: all .7s ease;
             }
             .quick-view{
-                transition-delay: .5s;
-                // transition: all 3s ease;
+                transition-delay: .4s !important;
+                transition: all .7s ease;
                 width: 48px;
-                margin: 0;
-                // transition-delay: .2s;
+                z-index: 9;
+                // margin: 0;
+                transform: translateY(25px);
+                // visibility: hidden;
+                opacity: 0;
+                transition-delay: .2s;
                 border-left: 1px solid hsla(0,0%,100%,.2);
             }
-            .wishlist:hover button,.cart:hover button,.quick-view:hover button{
+            .wishlist:hover button,.cart:hover button,.quick-view:hover button,{
                 transition: all 1s ease;
                 background-color: #000;
             }
@@ -303,7 +327,7 @@ hr{
 // product-card-content
 .product-card-content{
     text-align: center;
-    margin-top: -25px;
+    margin-top: 10px;
     padding: 0;
     h3{
     font-family: Poppins, sans-serif;
@@ -311,6 +335,10 @@ hr{
     line-height: 30px;
     margin-bottom: 0px;
     }
+    & h3:hover{
+        color: #a749ff;
+    }
+    
     i{
         font-size: 17px;
         line-height: 17px;

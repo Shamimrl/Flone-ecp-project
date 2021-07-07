@@ -51,6 +51,9 @@ hr{
 
 // Carousel section
 
+.carousel{
+    height: 500px;
+}
 .carousel-body{
     & h3{
         font-size: 20px;
@@ -309,15 +312,16 @@ hr{
             font-size: 13px;
             line-height: 13px;
             display: inline-block;
-            padding: 4px 10px;
+            padding: 4px 12px;
             background-color: #fa6bff;
             border-radius: 3px;
+            margin-bottom: 6px;
         }
         .purple{
             font-size: 13px;
             line-height: 13px;
             display: inline-block;
-            padding: 4px 10px;
+            padding: 4px 12px;
             border-radius: 3px;
             background-color: #a749ff;
         }
@@ -375,6 +379,178 @@ hr{
             line-height: 24px;
         }
     }
+}
+
+
+/**************  Support Card section  **************/
+
+.support-card-section{
+    margin: 70px 0 30px 0;
+
+    .support-single-card-item{
+        border: 5px solid #fff;
+        text-align: center;
+        padding: 36px 5px 30px;
+
+        .support-card-img{
+            margin: 10px;
+        }
+        &:hover .support-card-img{
+            animation-duration: .4s;
+            animation-name: support-animation;
+        }
+        @keyframes support-animation {
+            0%{
+                transform: scale(1) rotate(0deg);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: scale(1.3) rotate(3deg);
+            }
+            20%, 40%, 60%, 80% {
+                transform: scale(1.3) rotate(-3deg);
+            }
+            100%{
+                transform: scale(1) rotate(0deg);
+            }
+
+        }
+        .support-card-content{
+
+            h2{
+                font-family: Poppins, sans-serif;
+                font-size: 18px;
+                line-height: 24px;
+                color: #494949;
+            }
+            h3{
+                font-family: Poppins, sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                color: #6a6a6a;
+            }
+        }
+    }
+}
+
+/********** Subscribe section   *********/
+
+.subscribe-section{
+    margin-bottom: 40px;
+
+    .subscription-content{
+        h1{
+            font-family: Poppins, sans-serif;
+            font-size: 48px;
+            line-height: 36px;
+            color: #010101;
+        }
+        h3{
+            font-family: Poppins, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #696969;
+            margin: 25px 0;
+        }
+        .subscription-email{
+            position: relative;
+
+            .subs-mail{
+                font-size: 14px;
+                height: 45px;
+                padding: 2px 50px 2px 0;
+                color: #333;
+                border: none;
+                border-bottom: 2px solid #e2e2e2;
+                background: transparent;
+                width: 60%;
+            }
+            span{
+                position: absolute;
+                display: inline-block;
+                top: 0px;
+                right: 21%;
+                font-size: 34px;
+                color: #b8b3b3;
+            }
+        }
+
+    }
+}
+
+
+/************* Footer section *************/
+footer{
+    background-color: #f1f1f1;
+    padding: 70px 0 50px 0;
+}
+.flone-footer-section{
+    display: flex;
+    align-items: center;
+    .copy-right{
+        img{
+
+        }
+        h4{
+            font-family: Poppins, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #313131;
+        }
+        span:hover{
+            color: #a749ff;
+        }
+    }
+    ul{
+        li{
+            list-style-type: none;
+            font-family: Poppins, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #313131;
+            margin: 8px 0;
+        }
+        li:hover{
+            color: #a749ff;
+        }
+        .heading{
+            font-family: Poppins, sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            color: #313131;
+            font-weight: 600;
+        }
+        .heading:hover{
+            color: #313131;
+        }
+        .get-updates{
+            margin: 8px 0 25px 0;
+        }
+    }
+    .subscribe{
+        input{
+            margin-left: 33px;
+            font-size: 13px;
+            padding: 2px 10px 10px 0;
+            color: #333;
+            border: none;
+            border-bottom: 2px solid #ebebeb;
+            background: transparent;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        a{
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-left: 33px;
+            color: #313131;
+        }
+        a:hover{
+            color: #a749ff;
+        }
+        
+    }
+
+
 }
 
 

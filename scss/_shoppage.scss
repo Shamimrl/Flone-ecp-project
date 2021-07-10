@@ -1,0 +1,140 @@
+
+/************* Shop Page style *************/
+
+/************ topbar **********/
+.navbar{
+    background-color: #fff;
+
+    .free-delivary{
+        h3{
+            font-family: Poppins, sans-serif;
+            font-size: 14px;
+            font-weight: 24px;
+            color: #555252;
+        }
+        span{
+            color: red;
+        }
+    }
+}
+
+/********** secondary navbar ***********/
+
+.secondary-navbar{
+    padding: 30px 0;
+
+    .row{
+        width: 100%;
+    }
+
+    .right{
+        li{
+            margin-left: 15px;
+
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/******* Breadcrump section**********/
+
+.breadcrumb-section{
+    background-color: #f7f7f7;
+
+    .breadcrumb-path{
+        a{
+            font-family: Poppins, sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            color: #5b5858;
+            text-decoration: none;
+        }
+        .active{
+            font-family: Poppins, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            color: #1d1b1b;
+            text-decoration: none;
+        }
+    }
+}
+
+/************** Sidebar Widgets section **************/
+
+.ShopSidebar__widgets{
+    background-color: #fff;
+
+    &__title{
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
+    &__search-bar{
+        position: relative;
+        input{
+            font-size: 14px;
+            height: 43px;
+            padding: 2px 55px 2px 18px;
+            color: #000;
+            border: 1px solid #e6e6e6;
+            background: transparent none repeat scroll 0 0;
+            margin-bottom: 30px;
+
+        }
+        span{
+            position: absolute;
+            top: 11px;
+            right: 30px;
+            color: #a29b9b;
+            &::before{
+                position: absolute;
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 20px;
+                top: 5%;
+                left: -50%;
+                background-color: #bbaeae;
+            }
+        }
+    }
+    &__content{
+        &__categories{
+            button{
+                display: block;
+                border: none;
+                background-color: #fff;
+                margin-bottom: 10px;
+                .category__checkbox{
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 3px;
+                    border: 2px solid #888;
+                    margin-right: 5px;
+                }
+            }
+        }
+        &__tags{
+            ul{
+                padding: 0;
+                .btn__tag{
+                    display: inline-block;
+                    padding: 9px 17px 12px;
+                    background-color: #f6f6f6;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    color: #424242;
+                    border-radius: 50px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

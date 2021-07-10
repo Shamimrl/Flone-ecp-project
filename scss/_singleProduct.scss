@@ -1,0 +1,184 @@
+.single-product-section{
+    .col-6{
+        margin: 0;
+        padding: 0;;
+    }
+    background-color: #fff;
+
+    .product-large-img{
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+        }
+    }
+    .product-small-img{
+        overflow: hidden;
+
+        img{
+            width: 100%;
+        }
+    }
+    &-content-aria{
+        padding-left: 90px;
+    }
+    &-title{
+        h3{
+            font-family: Poppins, sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            color: #010101;
+        }
+    }
+    &-price{
+        margin-bottom: 30px;
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+            color: #fe5252;
+        }
+    }
+    &-rating{
+        
+        .yellow{
+            color: rgb(252, 187, 9);
+        }
+        .gray{
+            color: gray;
+            
+        }
+    }
+    &-desc{
+        margin: 40px 0;
+
+        p{
+            font-size: 15px;
+            line-height: 28px;
+            color: #333333;
+        }
+    }
+    &-add-to-cart-btn-section{
+        margin: 35px;
+        .inc-dec-btn{
+            display: inline-block;
+            border: 1px solid #d8cccc;
+            padding: 15px 0px;
+            
+            button{
+                color: #8f8f8f;
+                border: none;
+                background-color: #fff;
+            }
+            input{
+                color: #8f8f8f;
+                border: none;
+                width: 20px;
+                text-align: center;
+            }
+        }
+        .add-to-cart-btn{
+            margin: 0 10px;
+            &:hover button::before{
+                background-color: #a749ff;
+                left: 0px;
+                // opacity: 1;
+                transition: all .7s ease;
+            }
+            &:hover button::after{
+                width: 100%;
+                background-color: #a749ff;
+                right: 0px;
+                // opacity: 1;
+                transition: all 2s ease;
+            }
+            button{
+                position: relative;
+                background-color: #343538;
+                color: #fff;
+                display: inline-block;
+                padding: 16px 38px;
+                font-weight: 700;
+                border: none;
+                overflow: hidden;
+                z-index: 55;
+                
+                &::before{
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background-color: #a749ff;
+                    top: 0px;
+                    left: -100%;
+                    // opacity: 0;
+                    z-index: -1;
+                    
+                }
+                &::after{
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    background-color: #a749ff;
+                    top: 0px;
+                    right: -100%;
+                    // opacity: 0;
+                    z-index: -1;
+                    transition: all 1.5s ease;
+                }
+
+            }
+        }
+        .wishlist-icon{
+            a{
+                font-size: 18px;
+
+                span{
+                    color: rgb(71, 66, 66);
+                    font-weight: 400;
+                    margin: 0 5px 0 15px;
+                }
+            }
+        }
+        .suffle-icon{
+            a{
+                font-size: 18px;
+
+                span{
+                    color: rgb(71, 66, 66);
+                    font-weight: 400;
+                    margin: 0 10px;
+                }
+            }
+        }
+        
+    }
+    .category{
+        h3{
+            font-size: 15px;
+            line-height: 24px;
+            color: #343538;
+            
+        }
+    }
+    .tag{
+        h3{
+            font-size: 15px;
+            line-height: 24px;
+            color: #343538;
+            
+        }
+    }
+    .social-media-icons{
+        margin: 30px 0;
+        span{
+            margin-right: 40px;
+
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+}

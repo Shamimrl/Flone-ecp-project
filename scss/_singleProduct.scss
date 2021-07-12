@@ -1,3 +1,6 @@
+body{
+    background-color: #fff;
+}
 .single-product-section{
     .col-6{
         margin: 0;
@@ -180,5 +183,26 @@
                 font-size: 30px;
             }
         }
+    }
+}
+
+/********** Description and review section ***********/
+
+.desc-review-section{
+    margin: 30px 0;
+    background-color: #fff;
+
+    .desc-review-section-tab{
+        .nav-item{
+            //  border-bottom: 1px solid rgb(221, 21, 21);
+        }
+        .nav-link{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #666666;
+            border: none;
+        }
+        
     }
 }

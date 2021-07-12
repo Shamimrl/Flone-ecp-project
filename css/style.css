@@ -10811,7 +10811,7 @@ hr {
   width: 700px;
   height: 0;
   background-color: #fff;
-  transition: all 1s ease;
+  transition: all 0.4s ease;
   z-index: -1;
   padding: 35px;
   opacity: 0;
@@ -11399,6 +11399,10 @@ footer {
   line-height: 1;
 }
 
+body {
+  background-color: #fff;
+}
+
 .single-product-section {
   background-color: #fff;
 }
@@ -11550,6 +11554,74 @@ footer {
 }
 .single-product-section .social-media-icons span i {
   font-size: 30px;
+}
+
+/********** Description and review section ***********/
+.desc-review-section {
+  margin: 30px 0;
+  background-color: #fff;
+}
+.desc-review-section .desc-review-section-tab .nav-link {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #666666;
+  border: none;
+}
+
+.checkout {
+  margin: 40px 0;
+}
+.checkout h2, .checkout .h2 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.checkout label {
+  font-size: 14px;
+  line-height: 24px;
+}
+.checkout input {
+  border: 1px solid #c7c5c5;
+  border-radius: 0;
+}
+.checkout ::placeholder {
+  font-size: 14px;
+}
+
+/************* Order Details ************/
+.col-5 h3, .col-5 .h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.col-5 button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background-color: #a749ff;
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px 0;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.col-5 button:hover {
+  background-color: #000;
+}
+
+.order-details {
+  background-color: #f6f6f6;
+  padding: 30px 30px 80px 30px;
+}
+.order-details h4, .order-details .h4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.order-details p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+.checkout{
+    margin: 40px 0;
+    h2{
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+    label{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    input{
+        border: 1px solid rgb(199, 197, 197);
+        border-radius: 0;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+}
+
+/************* Order Details ************/
+.col-5{
+    h3{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    button{
+        width: 100%;
+        margin-top: 20px;
+        border: none;
+        background-color: #a749ff;
+        width: 100%;
+        margin-top: 20px;
+        padding: 13px 0;
+        color: #fff;
+        border-radius: 30px;
+        transition: all .5s ease;
+        &:hover{
+            background-color: #000;
+        }
+    
+    }
+}
+.order-details{
+    background-color: #f6f6f6;
+    padding: 30px 30px 80px 30px;
+
+    h4{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+}
